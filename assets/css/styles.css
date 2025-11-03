@@ -172,3 +172,56 @@ td p {
   color: #000;
   padding: 0;
 }
+
+/* ---------- Responsive adjustments ---------- */
+@media screen and (max-width: 768px) {
+  body {
+    background: #fff;
+    padding: 0;
+  }
+
+  .page,
+  .first.page {
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+    margin: 0 auto 30px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .page::after {
+    bottom: 20px;
+    font-size: 10px;
+  }
+
+  h1, h2, h3, p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .first.page h1 {
+    margin-top: 80px;
+    font-size: 1.8rem;
+  }
+
+  .first.page .document-author {
+    bottom: 80px;
+    font-size: 1rem;
+  }
+
+  .first.page .author-address {
+    bottom: 40px;
+    font-size: 0.9rem;
+  }
+
+  .signatories table {
+    border-spacing: 20px 20px;
+  }
+
+  .signatories td {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #000;
+  }
+}
